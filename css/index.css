@@ -1,0 +1,78 @@
+/* Ensure no margin or padding on html and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+header {
+    text-align: center;
+    padding: 0;
+}
+
+.banner {
+    position: relative;
+    width: 100vw; /* Full width of the viewport */
+    height: 90vh; /* Amlost full height of the viewport */
+    overflow: hidden; /* Ensure no overflow shows */
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole container without stretching */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;   
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+#date{
+    font-size: 35px;
+}
+.text-overlay h1{
+    font-size: 50px;
+}
+.text-overlay p{
+    font-size: 23px;
+}
+
+main {
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.food {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8a7b61;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
